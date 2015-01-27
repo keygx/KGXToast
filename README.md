@@ -2,6 +2,10 @@
 
 AndroidのToastの様なUIを実現するライブラリです。
 
+## スクリーンショット
+
+![screen.png](screen.png)
+
 ## 動作環境
 
 iOS8〜
