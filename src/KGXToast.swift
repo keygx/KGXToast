@@ -38,7 +38,7 @@ class KGXToast: UIWindow {
     class func showToastWithMessage(message: String, duration: ToastDisplayDuration) -> Void {
         
         // ステータスバーの向き(画面回転方向)
-        var orientation:UIInterfaceOrientation = UIApplication.sharedApplication().statusBarOrientation
+        let orientation:UIInterfaceOrientation = UIApplication.sharedApplication().statusBarOrientation
         
         // UIWindowの作成
         if baseWindow == nil {
@@ -68,7 +68,7 @@ class KGXToast: UIWindow {
         let labelWidth = oneLineLength * fontSize
         
         // Labelを作成する
-        var messageLabel: UILabel = UILabel(frame: CGRectMake(10, 10, labelWidth, 10))
+        let messageLabel: UILabel = UILabel(frame: CGRectMake(10, 10, labelWidth, 10))
         messageLabel.backgroundColor = UIColor.clearColor()
         messageLabel.userInteractionEnabled = false
         messageLabel.text = message
@@ -80,7 +80,7 @@ class KGXToast: UIWindow {
         messageLabel.sizeToFit()
         
         // Toastを作成
-        var toastView: UIView = UIView(frame: CGRectMake(0, 0, messageLabel.bounds.width + 10 + 10, messageLabel.bounds.height + 10 + 10+1))
+        let toastView: UIView = UIView(frame: CGRectMake(0, 0, messageLabel.bounds.width + 10 + 10, messageLabel.bounds.height + 10 + 10+1))
         toastView.backgroundColor = UIColor.blackColor()
         toastView.userInteractionEnabled = false
         toastView.layer.cornerRadius = 9
