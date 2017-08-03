@@ -12,7 +12,6 @@
 		365F65D51A63F91800577A04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 365F65D31A63F91800577A04 /* Main.storyboard */; };
 		365F65D71A63F91800577A04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 365F65D61A63F91800577A04 /* Images.xcassets */; };
 		365F65DA1A63F91800577A04 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 365F65D81A63F91800577A04 /* LaunchScreen.xib */; };
-		365F65E61A63F91800577A04 /* KGXToastDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F65E51A63F91800577A04 /* KGXToastDemoTests.swift */; };
 		365F65F11A63F9C500577A04 /* KGXToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365F65F01A63F9C500577A04 /* KGXToast.swift */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +34,6 @@
 		365F65D61A63F91800577A04 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		365F65D91A63F91800577A04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		365F65DF1A63F91800577A04 /* KGXToastDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KGXToastDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		365F65E41A63F91800577A04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		365F65E51A63F91800577A04 /* KGXToastDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KGXToastDemoTests.swift; sourceTree = "<group>"; };
 		365F65F01A63F9C500577A04 /* KGXToast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KGXToast.swift; path = KGXToast/KGXToast.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,7 +59,6 @@
 			isa = PBXGroup;
 			children = (
 				365F65CC1A63F91800577A04 /* KGXToastDemo */,
-				365F65E21A63F91800577A04 /* KGXToastDemoTests */,
 				365F65CB1A63F91800577A04 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -94,23 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				365F65CE1A63F91800577A04 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		365F65E21A63F91800577A04 /* KGXToastDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				365F65E51A63F91800577A04 /* KGXToastDemoTests.swift */,
-				365F65E31A63F91800577A04 /* Supporting Files */,
-			);
-			path = KGXToastDemoTests;
-			sourceTree = "<group>";
-		};
-		365F65E31A63F91800577A04 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				365F65E41A63F91800577A04 /* Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -167,11 +146,15 @@
 		365F65C21A63F91800577A04 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastSwiftMigration = 0730;
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = keygx;
 				TargetAttributes = {
 					365F65C91A63F91800577A04 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 3CCNMX7TC9;
+						LastSwiftMigration = 0830;
 					};
 					365F65DE1A63F91800577A04 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -233,7 +216,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				365F65E61A63F91800577A04 /* KGXToastDemoTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,15 +262,19 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -323,8 +309,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -332,6 +320,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -341,6 +330,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -350,9 +340,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3CCNMX7TC9;
 				INFOPLIST_FILE = KGXToastDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -360,9 +354,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 3CCNMX7TC9;
 				INFOPLIST_FILE = KGXToastDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -380,6 +378,7 @@
 				);
 				INFOPLIST_FILE = KGXToastDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KGXToastDemo.app/KGXToastDemo";
 			};
@@ -395,6 +394,7 @@
 				);
 				INFOPLIST_FILE = KGXToastDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.keygraphix.ios.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KGXToastDemo.app/KGXToastDemo";
 			};
@@ -419,6 +419,7 @@
 				365F65EB1A63F91800577A04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		365F65EC1A63F91800577A04 /* Build configuration list for PBXNativeTarget "KGXToastDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +428,7 @@
 				365F65EE1A63F91800577A04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

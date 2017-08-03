@@ -18,43 +18,43 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
-    override func prefersStatusBarHidden() -> Bool {
+    override var prefersStatusBarHidden : Bool {
         return false
     }
     
     // Toast
-    @IBAction func btnShortAction(sender: UIButton) {
-        var mes = ".LengthShort(2.0sec)"
-        KGXToast.showToastWithMessage(mes, duration: ToastDisplayDuration.LengthShort)
+    @IBAction func btnShortAction(_ sender: UIButton) {
+        let mes = ".lengthShort(2.0sec)"
+        KGXToast.showToastWithMessage(mes, duration: ToastDisplayDuration.lengthShort)
     }
-    @IBAction func btnNormalAction(sender: UIButton) {
-        var mes = ".LengthNormal(3.5sec)"
-        KGXToast.showToastWithMessage(mes, duration: ToastDisplayDuration.LengthNormal)
+    @IBAction func btnNormalAction(_ sender: UIButton) {
+        let mes = ".lengthNormal(3.5sec)"
+        KGXToast.showToastWithMessage(mes, duration: ToastDisplayDuration.lengthNormal)
     }
-    @IBAction func btnLongAction(sender: UIButton) {
-        var mes = ".LengthLong(5.0sec)\nいろはにほへとちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすん"
-        KGXToast.showToastWithMessage(mes, duration: ToastDisplayDuration.LengthLong)
+    @IBAction func btnLongAction(_ sender: UIButton) {
+        let mes = ".lengthLong(5.0sec)\nいろはにほへとちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすん"
+        KGXToast.showToastWithMessage(mes, duration: ToastDisplayDuration.lengthLong)
     }
-    @IBAction func btnLongLongAction(sender: UIButton) {
-        var mes = ".LengthLongLong(8.0sec)\nいろはにほへとちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすん"
-        KGXToast.showToastWithMessage(mes, duration: ToastDisplayDuration.LengthLongLong)
+    @IBAction func btnLongLongAction(_ sender: UIButton) {
+        let mes = ".lengthLongLong(8.0sec)\nいろはにほへとちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすん"
+        KGXToast.showToastWithMessage(mes, duration: ToastDisplayDuration.lengthLongLong)
     }
     
     // アラート
-    @IBAction func btnOpenWindowAction(sender: UIButton) {
+    @IBAction func btnOpenWindowAction(_ sender: UIButton) {
         // UIAlertControllerを作成する.
-        let myAlert = UIAlertController(title: "タイトル", message: "メッセージ", preferredStyle: .Alert)
+        let myAlert = UIAlertController(title: "タイトル", message: "メッセージ", preferredStyle: .alert)
         
         // OKのアクションを作成する.
-        let myOkAction = UIAlertAction(title: "OK", style: .Default) { action in
-            println("Action OK!!")
+        let myOkAction = UIAlertAction(title: "OK", style: .default) { action in
+            print("Action OK!!")
         }
         
         // OKのActionを追加する.
         myAlert.addAction(myOkAction)
         
         // UIAlertを発動する.
-        presentViewController(myAlert, animated: true, completion: nil)
+        present(myAlert, animated: true, completion: nil)
     }
 }
 

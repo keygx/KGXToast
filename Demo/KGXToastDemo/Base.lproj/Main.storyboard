@@ -1,7 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -13,76 +18,76 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tvh-47-pfw">
-                                <rect key="frame" x="250" y="50" width="100" height="30"/>
+                                <rect key="frame" x="137.5" y="50" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="D8b-fZ-afC"/>
                                     <constraint firstAttribute="width" constant="100" id="pYw-Cs-BLd"/>
                                 </constraints>
                                 <state key="normal" title="Short">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="btnShortAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="E0a-bI-RbK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cd-R5-69V">
-                                <rect key="frame" x="250" y="110" width="100" height="30"/>
+                                <rect key="frame" x="137.5" y="110" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="csu-Fp-SpT"/>
                                     <constraint firstAttribute="height" constant="30" id="mBQ-iN-yex"/>
                                 </constraints>
                                 <state key="normal" title="Normal">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="btnNormalAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5jp-4c-VH9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M6k-xP-tLc">
-                                <rect key="frame" x="250" y="170" width="100" height="30"/>
+                                <rect key="frame" x="137.5" y="170" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="mnk-B7-TU9"/>
                                     <constraint firstAttribute="height" constant="30" id="ycC-Dc-Gbj"/>
                                 </constraints>
                                 <state key="normal" title="Long">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="btnLongAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="z9E-IT-pLh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgf-Xj-7zD">
-                                <rect key="frame" x="250" y="230" width="100" height="30"/>
+                                <rect key="frame" x="137.5" y="230" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="51A-a9-csL"/>
                                     <constraint firstAttribute="height" constant="30" id="eb6-Nu-035"/>
                                 </constraints>
                                 <state key="normal" title="LongLong">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="btnLongLongAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tkT-j0-gqf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtA-Cl-BwP">
-                                <rect key="frame" x="260" y="530" width="80" height="30"/>
+                                <rect key="frame" x="147.5" y="597" width="80" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="AA3-oe-swd"/>
                                     <constraint firstAttribute="height" constant="30" id="NaX-vr-z3r"/>
                                 </constraints>
                                 <state key="normal" title="alert">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="btnOpenWindowAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yz3-q1-aeo"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jtA-Cl-BwP" secondAttribute="bottom" constant="40" id="5ur-dg-3KK"/>
                             <constraint firstAttribute="centerX" secondItem="Tvh-47-pfw" secondAttribute="centerX" id="5wM-cF-Yx2"/>
