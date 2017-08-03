@@ -24,19 +24,19 @@ class ViewController: UIViewController {
     
     // Toast
     @IBAction func btnShortAction(sender: UIButton) {
-        var mes = ".LengthShort(2.0sec)"
+        let mes = ".LengthShort(2.0sec)"
         KGXToast.showToastWithMessage(mes, duration: ToastDisplayDuration.LengthShort)
     }
     @IBAction func btnNormalAction(sender: UIButton) {
-        var mes = ".LengthNormal(3.5sec)"
+        let mes = ".LengthNormal(3.5sec)"
         KGXToast.showToastWithMessage(mes, duration: ToastDisplayDuration.LengthNormal)
     }
     @IBAction func btnLongAction(sender: UIButton) {
-        var mes = ".LengthLong(5.0sec)\nいろはにほへとちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすん"
+        let mes = ".LengthLong(5.0sec)\nいろはにほへとちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすん"
         KGXToast.showToastWithMessage(mes, duration: ToastDisplayDuration.LengthLong)
     }
     @IBAction func btnLongLongAction(sender: UIButton) {
-        var mes = ".LengthLongLong(8.0sec)\nいろはにほへとちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすん"
+        let mes = ".LengthLongLong(8.0sec)\nいろはにほへとちりぬるをわかよたれそつねならむうゐのおくやまけふこえてあさきゆめみしゑひもせすん"
         KGXToast.showToastWithMessage(mes, duration: ToastDisplayDuration.LengthLongLong)
     }
     
@@ -47,7 +47,7 @@ class ViewController: UIViewController {
         
         // OKのアクションを作成する.
         let myOkAction = UIAlertAction(title: "OK", style: .Default) { action in
-            println("Action OK!!")
+            print("Action OK!!")
         }
         
         // OKのActionを追加する.
